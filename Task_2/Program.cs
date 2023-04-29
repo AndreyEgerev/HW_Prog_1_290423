@@ -22,8 +22,9 @@ int secondNumber;
 int thirdNumber;
 int maxNumber;
 
-//Ввод чисел
+//Приветствие
 Console.WriteLine( "Нахождение максимального числа из трех чисел");
+//Ввод чисел
 Console.Write("Введите первое число - ");
 firstNumber = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число - ");
@@ -36,19 +37,3 @@ thirdNumber = int.Parse(Console.ReadLine());
 maxNumber = FindMaximumNumber(firstNumber,secondNumber);
 maxNumber = FindMaximumNumber(maxNumber, thirdNumber);
 Console.WriteLine("Наибольшее число - " + maxNumber);
-
-// if ( firstNumber > secondNumber )
-//     {
-//     Console.WriteLine(" Наибольшее число = " + firstNumber);
-//     Console.WriteLine(" Наименьшее число = " + secondNumber);
-//     }
-// else 
-// if ( secondNumber > firstNumber )
-//     {
-//     Console.WriteLine(" Наибольшее число = " + secondNumber);
-//     Console.WriteLine(" Наименьшее число = " + firstNumber);
-//     }
-// else
-//     {
-//     Console.WriteLine(" Числа равны");
-//     }
